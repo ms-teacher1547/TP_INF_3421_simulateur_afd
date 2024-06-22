@@ -3,7 +3,6 @@
 
 
     #define MAX_SYNBOLE 255
-    
     typedef struct Etat
     {
         int etiq;
@@ -17,7 +16,7 @@
         Etat* sorti;
     }Transi;
 
-    typedef struct automate
+    typedef struct Automate
     {
         int nombreEtats;
         int nombreTransi;
