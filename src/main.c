@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "afd.h"
-#include "error.h"
+#include <afd.h>
+#include <error.h>
 
 void get_afd_input(AFD *afd);
 void get_and_simulate_strings(AFD *afd);
