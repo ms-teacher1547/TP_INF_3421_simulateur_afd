@@ -18,5 +18,6 @@ void set_transition(AFD *afd, int from_state, char symbol, int to_state);
 void set_initial_state(AFD *afd, int state);
 void add_final_state(AFD *afd, int state);
 int simulate_afd(AFD *afd, const char *input);
+int is_deterministic(AFD *afd);
 
 #endif

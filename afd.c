@@ -42,3 +42,18 @@ int simulate_afd(AFD *afd, const char *input) {
     }
     return 0; // Not accepted
 }
+
+int is_deterministic(AFD *afd) {
+    for (int i = 0; i < afd->num_states; ++i) {
+        for (int j = 0; j < afd->alphabet_size; ++j) {
+            if (afd->transitions[i][j] != -1) {
+                for (int k = j + 1; k < afd->alphabet_size; ++k) {
+                    if (afd->transitions[i][k] != -1) {
+                        return 0; // Non-deterministic
+                    }
+                }
+            }
+        }
+    }
+    return 1; // Deterministic
+}
