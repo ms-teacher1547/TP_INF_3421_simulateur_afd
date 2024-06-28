@@ -1,6 +1,6 @@
-#include "afd.h"
 #include <string.h>
 #include <stdio.h>
+#include <afd.h>
 
 void initialize_afd(AFD *afd, int num_states, int alphabet_size) {
     afd->num_states = num_states;
